@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jesiel Silva Gomes - IFSPS</title>
+</head>
+<style>
+h1{
+  text-align:center;
+    color:white;
+}
+
+h2{
+  color:white;
+  text-align:center;
+}
+
+
+
+body{
+  background-color:black;
+  min-height: 400px;
+  background-image: url('https://img.freepik.com/fotos-gratis/sala-vazia-de-fundo-abstrato-gradiente-verde-com-espaco-para-seu-texto-e-imagens_1258-52336.jpg?size=626&ext=jpg&ga=GA1.2.1936216097.1628380800');
+  background-color: #010100;
+  background-size: 100vh;
+  background-position: top;
+  background-repeat: 0;
+   }
+page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+.valorCelsius{
+  color:white;
+}
+  .container {
+  text-align: center;
+  padding: 20px;
+  height: 10vh;
+  margin-top: 150px
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  height: 10vh;
+  margin-top: 150px
+}
+p{
+  text-align:center;
+  
+}
+</style>
+
+
+<body>
+<center><img src="https://www.ifsp.edu.br/images/Logo_Campus/Marca_IFSP_2015-031.png"></center>  
+<h1> Conversor de Temperatura </h1>
+
+<div class= "valorCelsius">
+  
+  <h2> Digite a Temp. em Celsius: </h2>
+  
+  <form class="botao">
+   <p>
+    <label>°C</label>
+    <input type="number" id="temperatura" placeholder='Temperatura em Celsius'>
+    <input type="button"
+           onclick="javascript:calculo();" name="name" value="Enviar">
+  <input type="text" id="txtResultado" value=""
+         placeholder='Resultado em Fahrenheit'>
+    </p>
+<center><img src="https://c.tenor.com/ax0wvn_16NwAAAAM/sad-crying.gif"></center>
+
+<script>
+function calculo() { 
+  var temperatura = (parseFloat(document.getElementById('temperatura').value) * 1.800 + 32.00).toFixed(1)
+   document.getElementById('txtResultado').setAttribute("value", temperatura+"°F");
+}
+
+</script>
+</body>
+</html>
